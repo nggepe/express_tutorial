@@ -1,0 +1,44 @@
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username":"john",
+    "password":"dhoe"
+}
+
+### GET ALL
+GET http://localhost:3000/uang-kas
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImpvaG4iLCJuYW1hX2xlbmdrYXAiOiJKb2huIERvZSJ9.XmXZ9NB4ECxzE7ybDnaHY2ahQ7OTLqFJatY9YS9i-18
+page: 0
+perpage: 3
+
+### GET BY ID
+GET http://localhost:3000/uang-kas/3
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImpvaG4iLCJuYW1hX2xlbmdrYXAiOiJKb2huIERvZSJ9.XmXZ9NB4ECxzE7ybDnaHY2ahQ7OTLqFJatY9YS9i-18
+
+### INSERT
+POST http://localhost:3000/uang-kas
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImpvaG4iLCJuYW1hX2xlbmdrYXAiOiJKb2huIERvZSJ9.XmXZ9NB4ECxzE7ybDnaHY2ahQ7OTLqFJatY9YS9i-18
+
+{
+    "debit":"5000000",
+    "credit":"0"
+}
+
+### UPDATE
+PUT http://localhost:3000/uang-kas/3
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImpvaG4iLCJuYW1hX2xlbmdrYXAiOiJKb2huIERvZSJ9.XmXZ9NB4ECxzE7ybDnaHY2ahQ7OTLqFJatY9YS9i-18
+
+{
+    "debit":"0",
+    "credit":"500"
+}
+
+### DELETE BY ID
+DELETE  http://localhost:3000/uang-kas/3
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImpvaG4iLCJuYW1hX2xlbmdrYXAiOiJKb2huIERvZSJ9.XmXZ9NB4ECxzE7ybDnaHY2ahQ7OTLqFJatY9YS9i-18
