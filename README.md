@@ -1,2 +1,2 @@
 # express_tutorial
-[tutorial ada di sini ](https://github.com/user/repo/blob/branch/other_file.md)
+[tutorial ada di sini ](https://reskara.blogspot.com/p/aplikasi-uang-kas-sederhana.html#reskara-konten)
